@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About| Kaoutar EL AMMOURI" description="Aboutme">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About me"
+				tagline="Thanks for stopping by. Read below to learn more about myself, my background and my enthousiasm for this position."
+			>
+			
+			</Hero>
+
+			<section>
+	
+				<div class="content">
+					<div class="cover-letter">
+						<div class="contact-info">
+							<h3>Skilled Full-Stack Developer with Business Process Management Knowledge</h2>
+								<br>
+							
+								
+
+<p>  Kaoutar El Ammouri is a dedicated and passionate software engineering student, currently in the final year of her studies. Throughout her academic journey, she has gained a solid foundation in various programming languages, software development methodologies, and technologies necessary for full-stack development. Kaoutar actively seeks opportunities to enhance her skills through internships and personal projects, demonstrating her commitment to continuous improvement and growth.</p>
+
+<p>Her interest in the Junior Full-Stack Developer role stems from her admiration for organizations that prioritize excellence and embrace technological innovation. Kaoutar has conducted thorough research into the industry and has a strong understanding of the latest trends and best practices in software development.</p>
+
+<p>Key strengths that make Kaoutar an ideal fit for a Junior Full-Stack Developer role include her technical proficiency in front-end development using HTML, CSS, JavaScript, and frameworks like Angular and Bootstrap. On the back-end, she has experience with Java, JEE, Spring Boot, Spring Security, Hibernate, and Thymeleaf for server-side development. She is also skilled in PHP and Laravel. Additionally, Kaoutar has a background in systems administration, enabling her to understand the intricacies of deploying and maintaining software systems effectively.</p>
+
+<p>Furthermore, Kaoutar has some basics on manipulating some software for the management of business processes such as Oracle and SAP. This experience has provided her with a comprehensive understanding of enterprise resource planning systems and their integration into business processes.</p>
+
+<p>Overall, Kaoutar's technical acumen, enthusiasm for software engineering, and dedication to delivering exceptional results make her an outstanding candidate for a Junior Full-Stack Developer position. She is confident in her ability to contribute positively to any company's team dynamics and drive digital transformation through her technical expertise.</p>
+
+<p>Thank you for considering Kaoutar's application. She is available at your convenience and is excited about the opportunity to discuss her qualifications further and demonstrate her enthusiasm for this position in an interview.</p>
+
+<p>Sincerely,</p>
+
+<p>Kaoutar El Ammouri</p>
+
+							</div>
+				</div>
+			</section>
+			
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
